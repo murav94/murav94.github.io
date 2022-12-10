@@ -1,0 +1,139 @@
+:root {
+    --mobileHorizontalFooter: 136px;
+    --desktopSmallFooter: 207px;
+    --desktopBigFooter: 207px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+    /* max-height: 100vh; */
+    max-width: 1920px;
+
+    margin: 0 auto;
+}
+
+.home {
+    position: relative;
+    flex-grow: 1;
+    min-height: 200px;
+    /* overflow-y: scroll; */
+    /* background-color: #aaa; */
+}
+
+.home__picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-image: url('/img/main/mobile_banner_01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-image 500ms ease-out;
+}
+
+.home__slogan {
+    color: var(--white);
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+
+    width: 90vw;
+    padding: 32px 8px;
+    border: 4px solid var(--white);
+
+    background-color: var(--black20);
+    box-shadow: 2px 2px 2px var(--black20);
+
+    overflow: hidden;
+}
+
+
+@media screen and (min-width: 576px) {
+    .home__slogan {
+        max-width: calc(100vw - 128px);
+    }
+
+    .home__arrows {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0 16px;
+        fill: var(--white);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home__arrowIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+    }
+
+    .home__arrowIcon>svg {
+        filter: drop-shadow(1px 1px 1px var(--black));
+    }
+
+    .home__arrowIcon * {
+        pointer-events: none;
+    }
+
+    .home__arrowIcon--small {
+        width: 32px;
+        height: 32px;
+    }
+
+    .home__arrowIcon--big {
+        display: none;
+        width: 64px;
+        height: 64px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .home__slogan {
+        max-width: 800px;
+    }
+
+    .home__arrowIcon--small {
+        display: none;
+    }
+
+    .home__arrowIcon--big {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .home__picture {
+        background-image: url('/img/main/desktop_banner_01.jpg');
+    }
+
+    .home__arrows {
+        margin: 0 32px;
+    }
+}
+
+/* -- Breakpoints -- */
+/* Up to 576px */
+/* From 576px to 768px */
+/* From 768px to 992px */
+/* From 992px to 1200px */
+/* From 1200px */
