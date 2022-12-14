@@ -1,180 +1,175 @@
 .wrapper {
-    display: flex;
-    flex-direction: column;
-
-    min-height: 100vh;
-    max-width: 1920px;
-
-    margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .contact__header {
-    position: relative;
-    margin-bottom: 37px;
-
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--lightGray);
+  position: relative;
+  margin-bottom: 37px;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--lightGray);
 }
 
 .contact__header::after {
-    display: block;
-    content: "";
-    width: 50px;
-    height: 3px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 5px);
-
-    background-color: var(--lightGray);
+  display: block;
+  content: "";
+  width: 50px;
+  height: 3px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 5px);
+          transform: translate(-50%, 5px);
+  background-color: var(--lightGray);
 }
 
 .contact__locations {
-    display: none;
+  display: none;
 }
 
 .contact__accordion {
-    background-color: var(--lightGray);
-    color: var(--white);
-    font-size: 16px;
-    line-height: 1.4;
-
-    padding: 0 16px;
-    margin-bottom: 32px;
+  background-color: var(--lightGray);
+  color: var(--white);
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 0 16px;
+  margin-bottom: 32px;
 }
 
 .infobar__title {
-    margin-bottom: 0;
-    padding: 32px 0 37px;
-    font-size: 30px;
-    color: var(--white);
-
-    cursor: pointer;
+  margin-bottom: 0;
+  padding: 32px 0 37px;
+  font-size: 30px;
+  color: var(--white);
+  cursor: pointer;
 }
 
 .infobar__title::after {
-    background-color: var(--white);
+  background-color: var(--white);
 }
 
 .infobar__collapsible {
-    max-height: 0;
-    padding-bottom: 0;
-    text-align: center;
-    transition: max-height .3s ease-out;
-    overflow: hidden;
-    opacity: 0;
+  max-height: 0;
+  padding-bottom: 0;
+  text-align: center;
+  -webkit-transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+  opacity: 0;
 }
 
 .infobar__collapsible--active {
-    padding-bottom: 32px;
-    opacity: 1;
+  padding-bottom: 32px;
+  opacity: 1;
 }
 
 .infobar__description {
-    margin-top: 8px;
-    text-align: justify;
+  margin-top: 8px;
+  text-align: justify;
 }
 
 .infobar__description:first-of-type {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 /* .infobar__button {
-   
-} */
 
+} */
 /* .infobar__button:hover {
 } */
-
 .contact-button {
-    display: inline-block;
-    text-transform: uppercase;
-    margin-top: 32px;
-    padding: 4px 8px;
-    border: 1px solid var(--white);
-    cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-top: 32px;
+  padding: 4px 8px;
+  border: 1px solid var(--white);
+  cursor: pointer;
 }
 
 .contact-button:hover {
-    color: var(--black);
-    background-color: var(--white);
+  color: var(--black);
+  background-color: var(--white);
 }
 
 .offices__office {
-    width: 100%;
-    margin-top: 32px;
-
-    color: var(--white);
-
-    background-color: var(--lightGray);
+  width: 100%;
+  margin-top: 32px;
+  color: var(--white);
+  background-color: var(--lightGray);
 }
 
 .offices__img {
-    height: 64px;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 64px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .offices__img--bremen {
-    background-image: url('/img/contact/bremen.jpg');
+  background-image: url("/img/contact/bremen.jpg");
 }
 
 .offices__img--portland {
-    background-image: url('/img/contact/portland.jpg');
+  background-image: url("/img/contact/portland.jpg");
 }
 
 .offices__img--paris {
-    background-image: url('/img/contact/paris.jpg');
+  background-image: url("/img/contact/paris.jpg");
 }
 
 .offices__img--newyork {
-    background-image: url('/img/contact/new-york.jpg');
+  background-image: url("/img/contact/new-york.jpg");
 }
 
 .offices__content {
-    padding: 16px;
+  padding: 16px;
 }
 
 .offices__city {
-    display: inline-block;
-    position: relative;
-
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .offices__city::after {
-    position: absolute;
-    display: block;
-    content: "";
-    height: 2px;
-    width: 100%;
-    background-color: var(--white);
+  position: absolute;
+  display: block;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: var(--white);
 }
 
 .offices__title {
-    font-size: 22px;
-    text-transform: uppercase;
-    margin-top: 10px;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-top: 10px;
 }
 
 .offices__details {
-    margin-top: 8px;
-    font-size: 16px;
-    line-height: 1.4;
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 .details__paragraph {
-    margin-top: 8px;
+  margin-top: 8px;
 }
 
 .details__link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* 
@@ -297,225 +292,193 @@
     background-color: var(--white);
 } */
 @media screen and (min-width: 576px) {
-    .main {
-        margin: 0 16px;
-    }
-
-    .contact__accordion {
-        padding: 0 32px;
-    }
-
-    .offices__office {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 1;
-        /* align-items: stretch; */
-    }
-
-    .offices__img {
-        height: auto;
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
-        /* align-self: stretch; */
-
-        background-color: #f00 !important;
-    }
-
-    .offices__content {
-        padding: 24px 32px;
-    }
-
-    .offices__content {
-        grid-column: 3 / -1;
-        grid-row: 1 / 2;
-    }
+  .main {
+    margin: 0 16px;
+  }
+  .contact__accordion {
+    padding: 0 32px;
+  }
+  .offices__office {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1;
+    /* align-items: stretch; */
+  }
+  .offices__img {
+    height: auto;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    /* align-self: stretch; */
+    background-color: #f00 !important;
+  }
+  .offices__content {
+    padding: 24px 32px;
+  }
+  .offices__content {
+    grid-column: 3/-1;
+    grid-row: 1/2;
+  }
 }
-
 @media screen and (min-width: 768px) {
-    .main {
-        margin: 0 32px;
-    }
+  .main {
+    margin: 0 32px;
+  }
+  .infobar__collapsible {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    gap: 8px 32px;
+  }
+  .infobar__description {
+    grid-column: 2/span 4;
+    margin-top: 0;
+  }
+  .infobar__button {
+    grid-row: 3;
+    grid-column: 1/7;
+    justify-self: center;
+    margin-top: 24px;
+  }
+  .offices__content {
+    padding: 48px 64px;
+  }
+  /* .approach__paragraph {
+      margin: 32px 0 0;
+  }
 
-    .infobar__collapsible {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 1fr;
-        gap: 8px 32px;
-    }
-
-    .infobar__description {
-        grid-column: 2 / span 4;
-        margin-top: 0;
-    }
-
-    .infobar__button {
-        grid-row: 3;
-        grid-column: 1 / 7;
-        justify-self: center;
-        margin-top: 24px;
-    }
-
-    .offices__content {
-        padding: 48px 64px;
-    }
-
-    /* .approach__paragraph {
-        margin: 32px 0 0;
-    }
-
-    .approach__banner-shadow {
-        padding: 32px;
-    } */
-
+  .approach__banner-shadow {
+      padding: 32px;
+  } */
 }
-
 @media screen and (min-width: 992px) {
-    /* .approach__header {
-        height: 600px;
-    }
+  /* .approach__header {
+      height: 600px;
+  }
 
-    .approach__grid {
-        display: grid;
-        grid-template-rows: 1;
-        gap: 32px;
-        align-items: center;
-    }
+  .approach__grid {
+      display: grid;
+      grid-template-rows: 1;
+      gap: 32px;
+      align-items: center;
+  }
 
-    .approach__grid--2 {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .approach__grid--2 {
+      grid-template-columns: repeat(2, 1fr);
+  }
 
-    .approach__grid--6 {
-        grid-template-columns: repeat(6, 1fr);
-    }
+  .approach__grid--6 {
+      grid-template-columns: repeat(6, 1fr);
+  }
 
-    .approach__text--primary {
-        grid-column: 2 / span 4;
-    }
+  .approach__text--primary {
+      grid-column: 2 / span 4;
+  }
 
-    .approach__banner-list {
-        list-style-type: none;
-        list-style-position: outside;
-        text-indent: 0;
-    }
+  .approach__banner-list {
+      list-style-type: none;
+      list-style-position: outside;
+      text-indent: 0;
+  }
 
-    .approach__text--secondary {
-        margin-left: 0;
-    }
+  .approach__text--secondary {
+      margin-left: 0;
+  }
 
-    .approach__text--secondaryHeader {
-        grid-column: 1 / 2;
-        margin-bottom: 0;
-    }
+  .approach__text--secondaryHeader {
+      grid-column: 1 / 2;
+      margin-bottom: 0;
+  }
 
-    .approach__banner-list {
-        grid-column: 2 / 3;
-    }
+  .approach__banner-list {
+      grid-column: 2 / 3;
+  }
 
-    .approach__banner-shadow {
-        padding: 64px;
-    } */
-
+  .approach__banner-shadow {
+      padding: 64px;
+  } */
 }
-
 @media screen and (min-width: 1200px) {
-    .contact__locations {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1;
-        margin-bottom: 16px;
-    }
+  .contact__locations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1;
+    margin-bottom: 16px;
+  }
+  .locations__city {
+    position: relative;
+    height: min((100vw - 64px) / 4, 464px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .locations__city--bremen {
+    background-image: url("img/contact/bremen.jpg");
+  }
+  .locations__city--portland {
+    background-image: url("img/contact/portland.jpg");
+  }
+  .locations__city--paris {
+    background-image: url("img/contact/paris.jpg");
+  }
+  .locations__city--newyork {
+    background-image: url("img/contact/new-york.jpg");
+  }
+  .locations__shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--black40);
+  }
+  .locations__content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .locations__title {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .locations__description {
+    margin-top: 16px;
+  }
+  .contact__accordion {
+    margin-bottom: 16px;
+  }
+  .infobar__collapsible {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .infobar__description {
+    grid-column: 3/span 4;
+    margin-top: 0;
+  }
+  .infobar__button {
+    grid-column: 1/9;
+  }
+  /* .approach__header {
+      background-image: url('/img/approach/desktop_header.jpg');
+  }
 
-    .locations__city {
-        position: relative;
+  .approach__banner--01 {
+      background-image: url('img/approach/desktop_banner_01.jpg');
+  }
 
-        height: min(calc((100vw - 2 * 32px) / 4), calc((1920px - 2 * 32px) / 4));
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+  .approach__banner--02 {
+      background-image: url('img/approach/desktop_banner_02.jpg');
+  }
 
-    .locations__city--bremen {
-        background-image: url('img/contact/bremen.jpg');
-    }
+  .approach__banner--03 {
+      background-image: url('img/approach/desktop_banner_03.jpg');
+  }
 
-    .locations__city--portland {
-        background-image: url('img/contact/portland.jpg');
-    }
-
-    .locations__city--paris {
-        background-image: url('img/contact/paris.jpg');
-    }
-
-    .locations__city--newyork {
-        background-image: url('img/contact/new-york.jpg');
-    }
-
-    .locations__shadow {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: var(--black40);
-    }
-
-    .locations__content {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        right: 0;
-        transform: translateY(-50%);
-
-        color: var(--white);
-        text-transform: uppercase;
-        text-align: center;
-    }
-
-    .locations__title {
-        font-size: 36px;
-        font-weight: 700;
-    }
-
-    .locations__description {
-        margin-top: 16px;
-    }
-
-    .contact__accordion {
-        margin-bottom: 16px;
-    }
-
-    .infobar__collapsible {
-        grid-template-columns: repeat(8, 1fr);
-    }
-
-    .infobar__description {
-        grid-column: 3 / span 4;
-        margin-top: 0;
-    }
-
-    .infobar__button {
-        grid-column: 1 / 9;
-    }
-
-    /* .approach__header {
-        background-image: url('/img/approach/desktop_header.jpg');
-    }
-
-    .approach__banner--01 {
-        background-image: url('img/approach/desktop_banner_01.jpg');
-    }
-
-    .approach__banner--02 {
-        background-image: url('img/approach/desktop_banner_02.jpg');
-    }
-
-    .approach__banner--03 {
-        background-image: url('img/approach/desktop_banner_03.jpg');
-    }
-
-    .approach__banner--04 {
-        background-image: url('img/approach/desktop_banner_04.jpg');
-    } */
-
-}
+  .approach__banner--04 {
+      background-image: url('img/approach/desktop_banner_04.jpg');
+  } */
+}/*# sourceMappingURL=contact.css.map */
