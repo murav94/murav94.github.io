@@ -171,7 +171,6 @@
   background-color: var(--black40);
 }
 
-.press-card:hover .press-card__shadow,
 .card__shadow--on {
   opacity: 1;
   -webkit-transition: opacity 300ms ease-out;
@@ -243,6 +242,11 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .press-card:hover .press-card__shadow {
+    opacity: 1;
+    -webkit-transition: opacity 300ms ease-out;
+    transition: opacity 300ms ease-out;
+  }
   .press--covers,
 .press--awards__container {
     --card-size: calc((100vw - 2 * 32px - 3 * 16px)/4);

@@ -88,7 +88,6 @@
     background-color: var(--black40);
 }
 
-.portfolio-card:hover .portfolio-card__shadow,
 .card__shadow--on {
     opacity: 1;
     transition: opacity 300ms ease-out;
@@ -135,6 +134,11 @@
     .main {
         --card-size: calc((100vw - 3 * 32px - 2 * 16px)/3);
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portfolio-card:hover .portfolio-card__shadow {
+        opacity: 1;
+        transition: opacity 300ms ease-out;
     }
 }
 
