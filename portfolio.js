@@ -7,11 +7,22 @@ const toggleDescription = (e) => {
     const cardClicked = e.target.closest('.js-portfolio-card'),
         shadowClicked = cardClicked.querySelector('.js-portfolio-shadow')
 
-    portfolioShadows.forEach(shadow => {
-        shadow.classList.remove('portfolio-card__shadow--on')
-    })
+    const removeClass = (nodeList) => {
+        nodeList.forEach(shadow => {
+            shadow.classList.remove('portfolio-card__shadow--on')
+        })
+
+        console.log(nodeList)
+    }
+
+
+    removeClass(portfolioShadows)
 
     shadowClicked.classList.add('portfolio-card__shadow--on')
+
+    setTimeout(() => {
+        removeClass(portfolioShadows)
+    }, 5000)
 }
 
 portfolioCards.forEach(card => {
