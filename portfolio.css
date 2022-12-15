@@ -90,7 +90,8 @@
   background-color: var(--black40);
 }
 
-.portfolio-card:hover .portfolio-card__shadow {
+.portfolio-card:hover .portfolio-card__shadow,
+.portfolio-card__shadow--on {
   opacity: 1;
   -webkit-transition: opacity 300ms ease-out;
   transition: opacity 300ms ease-out;
