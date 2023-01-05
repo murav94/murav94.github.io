@@ -27,7 +27,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("/img/main/mobile_banner_01.jpg"), url("/img/main/mobile_banner_02.jpg"), url("/img/main/mobile_banner_03.jpg"), url("/img/main/mobile_banner_04.jpg"), url("/img/main/mobile_banner_05.jpg");
+  background-image: url("img/main/mobile_banner_01.jpg"), url("img/main/mobile_banner_02.jpg"), url("img/main/mobile_banner_03.jpg"), url("img/main/mobile_banner_04.jpg"), url("img/main/mobile_banner_05.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -116,7 +116,7 @@
 
 @media screen and (min-width: 1200px) {
   .home__picture {
-    background-image: url("/img/main/desktop_banner_01.jpg"), url("/img/main/desktop_banner_02.jpg"), url("/img/main/desktop_banner_03.jpg"), url("/img/main/desktop_banner_04.jpg"), url("/img/main/desktop_banner_05.jpg");
+    background-image: url("img/main/desktop_banner_01.jpg"), url("img/main/desktop_banner_02.jpg"), url("img/main/desktop_banner_03.jpg"), url("img/main/desktop_banner_04.jpg"), url("img/main/desktop_banner_05.jpg");
   }
 
   .home__arrows {
