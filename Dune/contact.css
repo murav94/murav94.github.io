@@ -309,7 +309,6 @@
     grid-column: 1/3;
     grid-row: 1/2;
     /* align-self: stretch; */
-    background-color: #f00 !important;
   }
   .offices__content {
     padding: 24px 32px;
