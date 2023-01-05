@@ -11,7 +11,7 @@
 .profile__header {
     position: relative;
 
-    background-image: url('/img/profile/mobile_header.jpg');
+    background-image: url('img/profile/mobile_header.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -165,7 +165,7 @@
 
 @media screen and (min-width: 1200px) {
     .profile__header {
-        background-image: url('/img/profile/desktop_header.jpg');
+        background-image: url('img/profile/desktop_header.jpg');
     }
 
     .profile__banner {

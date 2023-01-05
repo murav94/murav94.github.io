@@ -16,7 +16,7 @@ const changeCarouselPicture = () => {
     if (pictureIndex >= pictureNumber) pictureIndex = 0
     if (pictureIndex < 0) pictureIndex = pictureNumber - 1
 
-    picContainer.style.backgroundImage = `url('/img/main/${isDesktop?'desktop':'mobile'}${pictureNamesSuffixes[pictureIndex]}')`
+    picContainer.style.backgroundImage = `url('img/main/${isDesktop?'desktop':'mobile'}${pictureNamesSuffixes[pictureIndex]}')`
 
     if (pictureIndex === 0) {
         (mainSlogan.classList.remove('hidden'))
