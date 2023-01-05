@@ -13,7 +13,7 @@
 
 .approach__header {
   position: relative;
-  background-image: url("/img/approach/mobile_header.jpg");
+  background-image: url("img/approach/mobile_header.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -180,7 +180,7 @@
 }
 @media screen and (min-width: 1200px) {
   .approach__header {
-    background-image: url("/img/approach/desktop_header.jpg");
+    background-image: url("img/approach/desktop_header.jpg");
   }
   .approach__banner--01 {
     background-image: url("img/approach/desktop_banner_01.jpg");
